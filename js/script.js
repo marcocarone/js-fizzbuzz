@@ -1,21 +1,20 @@
-
-
-for ( var i = 1; i <= 100; i++) {
+for (var i = 1; i <= 100; i++) {
 
   if (i % 3 == 0 && i % 5 == 0) {
-      console.log('FizzBuzz');
-      // i = "FizzBuzz";
+    console.log('FizzBuzz');
+    document.getElementById("lista-numeri").innerHTML += "<li>" + "FizzBuzz" + "</li>";
+
   } else if (i % 3 == 0) {
-      console.log('Fizz');
-      // i = "Fizz";
-  }
-  else if (i % 5 == 0) {
-      console.log('Buzz');
-      // i = "Buzz";
-  }  else {
+    console.log('Fizz');
+    document.getElementById("lista-numeri").innerHTML += "<li>" + "Fizz" + "</li>";
+
+  } else if (i % 5 == 0) {
+    console.log('Buzz');
+    document.getElementById("lista-numeri").innerHTML += "<li>" + "Buzz" + "</li>";
+
+  } else {
     console.log(i);
-// document.getElementById("lista-numeri").innerHTML += "<li>" + i + "</li>";
+    document.getElementById("lista-numeri").innerHTML += "<li>" + i + "</li>";
   }
 
-
-    }
+}
